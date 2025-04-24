@@ -1,0 +1,34 @@
+public class Disco
+{
+    public string nombreDisco {get; set;}
+    public int id {get; set;}
+    public string nombreArtista { get; set; }
+    public string nombreProductor {get; set; }
+    public List<string> temas {get; set;}
+
+    public Disco(int id, string nombreArtista, string nombreProductor)
+    {
+        this.id = id;
+        this.nombreArtista = nombreArtista;
+        this.nombreProductor = nombreProductor;
+        this.temas = new List<string>();
+    }
+
+
+   public Dictionary<int, Disco> discos {get; set;}
+
+    public Catalogo()
+    {
+        this.discos = new Dictionary<int, Disco>();
+    }
+
+    public void InicializarCatalogo()
+    {
+       
+
+    }
+Creame un metodo de c# en mvc, que sea de inicializar un dictionario con 10 discos, utiliza nombres de artistas y discos existentes con canciones reales
+
+
+
+podes hacerlo mas simple , genera muchas variables si es necesario
