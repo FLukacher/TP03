@@ -1,14 +1,12 @@
 namespace TP03.Models;
 
-public class Catalogo
+public static class Catalogo
 {
-    public Dictionary<int, Disco> discos {get; set;}
-    public Catalogo()
+    public static Dictionary<int, Disco> discos {get; set;}
+
+    public static void InicializarCatalogo()
     {
-        this.discos = new Dictionary<int, Disco>();
-    }
-    public void InicializarCatalogo()
-    {
+        discos = new Dictionary<int, Disco>();
         Disco d1 = new Disco(1, "Soda Stereo", "Gustavo Cerati", "Signos", "signos.jpg");
         d1.temas.Add("Signos");
         d1.temas.Add("Persiana americana");
@@ -68,6 +66,5 @@ public class Catalogo
         d10.temas.Add("Cien años");
         d10.temas.Add("Cómo te extraño");
         discos.Add(d10.id, d10);
-
     }
 }

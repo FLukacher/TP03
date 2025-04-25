@@ -15,6 +15,17 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        Catalogo.InicializarCatalogo();
+        ViewBag.discos = Catalogo.discos;      
         return View();
+    }
+    public IActionResult SelectDisco(int id)
+    {
+        if (Catalogo.discos.ContainsKey(id))
+        {
+            ViewBag.disco = Catalogo.discos[id];
+            ViewBag.id = id;
+        }
+        return View("datosDisco.html");
     }
 }
