@@ -1,0 +1,16 @@
+﻿<h2>Información del Disco</h2>
+
+<p><strong>ID:</strong> @ViewBag.disco.id</p>
+<p><strong>Nombre del Disco:</strong> @ViewBag.disco.nombreDisco</p>
+<p><strong>Nombre del Artista:</strong> @ViewBag.disco.nombreArtista</p>
+<p><strong>Nombre del Productor:</strong> @ViewBag.disco.nombreProductor</p>
+<p><strong>Foto:</strong></p>
+<img src="@ViewBag.disco.foto" alt="Foto del disco" />
+
+<h3>Temas:</h3>
+<ul>
+@foreach (var tema in ViewBag.disco.temas)
+{
+    <li>@tema</li>
+}
+</ul>
