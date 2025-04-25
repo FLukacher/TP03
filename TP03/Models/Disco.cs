@@ -9,15 +9,13 @@ public class Disco
     public List<string> temas {get; private set;}
     public string foto {get; private set;}
 
-    public Disco(int id, string nombreArtista, string nombreProductor, string nombreDisco)
+    public Disco(int id, string nombreArtista, string nombreProductor, string nombreDisco, string foto)
     {
         this.nombreDisco = nombreDisco;
         this.id = id;
         this.nombreArtista = nombreArtista;
         this.nombreProductor = nombreProductor;
         this.temas = new List<string>();
-        this.foto = nombreDisco;
+        this.foto = foto;
     }
-
-
 }
