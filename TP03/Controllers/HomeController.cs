@@ -26,6 +26,6 @@ public class HomeController : Controller
             ViewBag.disco = Catalogo.discos[id];
             ViewBag.id = id;
         }
-        return View("datosDisco.html");
+        return View("datosDisco");
     }
 }
