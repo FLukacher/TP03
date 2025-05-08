@@ -1,3 +1,6 @@
+*{
+
+}
 html {
   font-size: 14px;
   min-height: 100%;
@@ -20,4 +23,11 @@ footer {
   padding: 10px;
   background-color: #f8f9fa;
   border-top: 1px solid #e9ecef;
+}
+div img {
+  float: left;
+  margin: 10px;
+  border: 2px solid black;
+  width: 150px;
+  height: auto;
 }

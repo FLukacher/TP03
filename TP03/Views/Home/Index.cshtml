@@ -2,12 +2,12 @@
     ViewData["Title"] = "Index";
 }
 <section>
-<div>
     <h1>Index</h1>
     @foreach(KeyValuePair<int, Disco> item in ViewBag.discos)
     {
+        <div>
         <h3><a href='@Url.Action("SelectDisco", "Home", new {id = @item.Value.id})'> <img src = "/img/@(item.Value.nombreDisco).jpg" alt ="imagen disco"/></a></h3>
-        
+        </div>
     }
 
-</div>
+</section>
